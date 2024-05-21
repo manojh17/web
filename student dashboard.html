@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Dashboard</h1>
+        </header>
+        <main>
+            <section class="student-info">
+                <h2>Add Student Information</h2>
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="yearOfStudy">Year of Study:</label>
+                        <select id="yearOfStudy" name="yearOfStudy" required>
+                            <option value="">Select Year</option>
+                            <option value="1">Year 1</option>
+                            <option value="2">Year 2</option>
+                            <option value="3">Year 3</option>
+                            <option value="4">Year 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        
+                    </div>
+                    <button type="button" onclick="addStudentInfo()">Add Information</button>
+                </form>
+                <div id="studentInfoDisplay">
+                    <h3>Student Information:</h3>
+                    <p id="displayYearOfStudy"></p>
+                    
+                </div>
+            </section>
+            <section class="timetable">
+                <h2>Class Timetable</h2>
+                <div id="timetableContainer">
+                    
+                </div>
+            </section>
+            <section class="course-pdfs">
+                <h2>Course PDFs</h2>
+                <input type="text" id="searchBar" onkeyup="filterPDFs()" placeholder="Search for PDFs...">
+                <ul id="pdfList">
+                    <li><a href="pdf/oose.pdf" target="_blank">oose</a></li>
+                    <li><a href="pdf/dbms.pdf" target="_blank">dbms</a></li>
+                    <li><a href="pdf/WEB ESSENTIALS.pdf" target="_blank">WEB ESSENTIALS</a></li>
+                    <li><a href="https://drive.google.com/file/d/1cvXr56dMekW6uEDjUWJAb8qtlSf9IJCf/view?usp=drive_link" target="_blank">MAD</a></li>
+                
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
